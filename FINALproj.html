@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+        animationEnabled: true,
+        theme: "theme2",
+        title:{
+        },
+
+
+        axisY:[{
+          lineColor: "#4F81BC",
+          tickColor: "#4F81BC",
+          labelFontColor: "#4F81BC",
+          titleFontColor: "#4F81BC",
+          lineThickness: 2,
+          maximum: .1,
+
+        },
+        {
+          lineColor: "#C0504E",
+          tickColor: "#C0504E",
+          labelFontColor: "#C0504E",
+          titleFontColor: "#C0504E",
+          lineThickness: 2,
+          maximum: .1,
+          minimum: -.1,
+          
+        }],
+        data: [
+        {
+            type: "spline", //change type to bar, line, area, pie, etc
+            showInLegend: true,        
+            dataPoints: [
+                { x: 2005, y: .0367 },
+                { x: 2006, y: .0644},
+                { x: 2007, y: -.0022 },
+                { x: 2008, y: -.0722 },
+                { x: 2009, y: -.0055 },
+                { x: 2010, y: -.0022 },
+                { x: 2011, y: .05 },
+                { x: 2012, y: .0088},
+                { x: 2013, y: .1033 },
+                { x: 2014, y: .0522}
+            ]
+            },
+            {
+            type: "spline",
+                        axisYIndex: 1,
+            showInLegend: true,            
+            dataPoints: [
+                { x: 2005, y: -.0023 },
+                { x: 2006, y: -.0017},
+                { x: 2007, y: -.0008 },
+                { x: 2008, y: .0109 },
+                { x: 2009, y: .0275 },
+                { x: 2010, y: .0019 },
+                { x: 2011, y: -.0043 },
+                { x: 2012, y: -.002},
+                { x: 2013, y: -.0072 },
+                { x: 2014, y: -.01}
+            ]
+            }
+        ],
+        legend: {
+            cursor: "pointer",
+            itemclick: function (e) {
+                if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                    e.dataSeries.visible = false;
+                } else {
+                    e.dataSeries.visible = true;
+            }
+            chart.render();
+            }
+        }
+    });
+
+    chart.render();
+}
+</script>
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+    var chart2 = new CanvasJS.Chart("chartContainer2",
+    {
+        animationEnabled: true,
+        theme: "theme2",
+        title:{
+        },
+
+
+        axisY:[{
+          lineColor: "#4F81BC",
+          tickColor: "#4F81BC",
+          labelFontColor: "#4F81BC",
+          titleFontColor: "#4F81BC",
+          lineThickness: 2,
+          maximum: .1,
+
+        },
+        {
+          lineColor: "#C0504E",
+          tickColor: "#C0504E",
+          labelFontColor: "#C0504E",
+          titleFontColor: "#C0504E",
+          lineThickness: 2,
+          maximum: .1,
+          minimum: -.1,
+          
+        }],
+        data: [
+        {
+            type: "spline", //change type to bar, line, area, pie, etc
+            showInLegend: true,        
+            dataPoints: [
+                { x: 2005, y: .0882 },
+                { x: 2006, y: -.0258},
+                { x: 2007, y: -.0235 },
+                { x: 2008, y: -.0441 },
+                { x: 2009, y: -.0147},
+                { x: 2010, y: .0141 },
+                { x: 2011, y: .0223},
+                { x: 2012, y: -.0188},
+                { x: 2013, y: .0905 },
+                { x: 2014, y: .0147},
+            ]
+            },
+            {
+            type: "spline",
+                        axisYIndex: 1,
+            showInLegend: true,            
+            dataPoints: [
+                { x: 2005, y: -.0022},
+                { x: 2006, y: -.0047},
+                { x: 2007, y: -.0016 },
+                { x: 2008, y: .0094 },
+                { x: 2009, y: .0347 },
+                { x: 2010, y: .00317 },
+                { x: 2011, y: -.0046 },
+                { x: 2012, y: -.0106},
+                { x: 2013, y: -.0047 },
+                { x: 2014, y: -.0098},
+            ]
+            }
+        ],
+        legend: {
+            cursor: "pointer",
+            itemclick: function (e) {
+                if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                    e.dataSeries.visible = false;
+                } else {
+                    e.dataSeries.visible = true;
+            }
+            chart2.render();
+            }
+        }
+    });
+
+    chart2.render();
+}
+</script>
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+   <div> 
+    <script type="text/javascript">
+    window.onload = function () {
+
+
+
+
+        var chart = new CanvasJS.Chart("chartContainer",
+            {
+                animationEnabled: true,
+                theme: "theme2",
+                title:{
+                },
+
+
+                axisY:[{
+                  lineColor: "#4F81BC",
+                  tickColor: "#4F81BC",
+                  labelFontColor: "#4F81BC",
+                  titleFontColor: "#4F81BC",
+                  lineThickness: 2,
+                  maximum: .1,
+
+                },
+                {
+                  lineColor: "#C0504E",
+                  tickColor: "#C0504E",
+                  labelFontColor: "#C0504E",
+                  titleFontColor: "#C0504E",
+                  lineThickness: 2,
+                  maximum: .1,
+                  minimum: -.1,
+                  
+                }],
+                data: [
+                {
+                    type: "spline", //change type to bar, line, area, pie, etc
+                    showInLegend: true,        
+                    dataPoints: [
+                        { x: 2005, y: .0367 },
+                        { x: 2006, y: .0644},
+                        { x: 2007, y: -.0022 },
+                        { x: 2008, y: -.0722 },
+                        { x: 2009, y: -.0055 },
+                        { x: 2010, y: -.0022 },
+                        { x: 2011, y: .05 },
+                        { x: 2012, y: .0088},
+                        { x: 2013, y: .1033 },
+                        { x: 2014, y: .0522}
+                    ]
+                    },
+                    {
+                    type: "spline",
+                                axisYIndex: 1,
+                    showInLegend: true,            
+                    dataPoints: [
+                        { x: 2005, y: -.0023 },
+                        { x: 2006, y: -.0017},
+                        { x: 2007, y: -.0008 },
+                        { x: 2008, y: .0109 },
+                        { x: 2009, y: .0275 },
+                        { x: 2010, y: .0019 },
+                        { x: 2011, y: -.0043 },
+                        { x: 2012, y: -.002},
+                        { x: 2013, y: -.0072 },
+                        { x: 2014, y: -.01}
+                    ]
+                    }
+                ],
+                legend: {
+                    cursor: "pointer",
+                    itemclick: function (e) {
+                        if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                            e.dataSeries.visible = false;
+                        } else {
+                            e.dataSeries.visible = true;
+                    }
+                    chart.render();
+                    }
+                }
+            });
+
+            chart.render();
+
+
+
+
+
+
+
+        var chart2 = new CanvasJS.Chart("chartContainer2",
+            {
+                animationEnabled: true,
+                theme: "theme2",
+                title:{
+                },
+
+
+                axisY:[{
+                  lineColor: "#4F81BC",
+                  tickColor: "#4F81BC",
+                  labelFontColor: "#4F81BC",
+                  titleFontColor: "#4F81BC",
+                  lineThickness: 2,
+                  maximum: .1,
+
+                },
+                {
+                  lineColor: "#C0504E",
+                  tickColor: "#C0504E",
+                  labelFontColor: "#C0504E",
+                  titleFontColor: "#C0504E",
+                  lineThickness: 2,
+                  maximum: .1,
+                  minimum: -.1,
+                  
+                }],
+                data: [
+                {
+                    type: "spline", //change type to bar, line, area, pie, etc
+                    showInLegend: true,        
+                    dataPoints: [
+                        { x: 2005, y: .0882 },
+                        { x: 2006, y: -.0258},
+                        { x: 2007, y: -.0235 },
+                        { x: 2008, y: -.0441 },
+                        { x: 2009, y: -.0147},
+                        { x: 2010, y: .0141 },
+                        { x: 2011, y: .0223},
+                        { x: 2012, y: -.0188},
+                        { x: 2013, y: .0905 },
+                        { x: 2014, y: .0147},
+                    ]
+                    },
+                    {
+                    type: "spline",
+                                axisYIndex: 1,
+                    showInLegend: true,            
+                    dataPoints: [
+                        { x: 2005, y: -.0022},
+                        { x: 2006, y: -.0047},
+                        { x: 2007, y: -.0016 },
+                        { x: 2008, y: .0094 },
+                        { x: 2009, y: .0347 },
+                        { x: 2010, y: .00317 },
+                        { x: 2011, y: -.0046 },
+                        { x: 2012, y: -.0106},
+                        { x: 2013, y: -.0047 },
+                        { x: 2014, y: -.0098},
+                    ]
+                    }
+                ],
+                legend: {
+                    cursor: "pointer",
+                    itemclick: function (e) {
+                        if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                            e.dataSeries.visible = false;
+                        } else {
+                            e.dataSeries.visible = true;
+                    }
+                
+                    }
+                }
+            });
+
+            chart2.render();
+        }
+
+
+
+
+
+
+
+
+
+
+        var chart3 = new CanvasJS.Chart("chartContainer3",
+        {
+            animationEnabled: true,
+            theme: "theme2",
+            title:{
+            },
+
+
+            axisY:[{
+              lineColor: "#4F81BC",
+              tickColor: "#4F81BC",
+              labelFontColor: "#4F81BC",
+              titleFontColor: "#4F81BC",
+              lineThickness: 2,
+              maximum: .1,
+
+            },
+            {
+              lineColor: "#C0504E",
+              tickColor: "#C0504E",
+              labelFontColor: "#C0504E",
+              titleFontColor: "#C0504E",
+              lineThickness: 2,
+              maximum: .1,
+              minimum: -.1,
+              
+            }],
+            data: [
+            {
+                type: "spline", //change type to bar, line, area, pie, etc
+                showInLegend: true,        
+                dataPoints: [
+                    { x: 2005, y: .0631},
+                    { x: 2006, y: .0123},
+                    { x: 2007, y: -.0392 },
+                    { x: 2008, y: -.0538 },
+                    { x: 2009, y: -.0131},
+                    { x: 2010, y: .0015 },
+                    { x: 2011, y: .0169},
+                    { x: 2012, y: -.05},
+                    { x: 2013, y: .0646 },
+                    { x: 2014, y: -.0054}
+                ]
+                },
+                {
+                type: "spline",
+                            axisYIndex: 1,
+                showInLegend: true,            
+                dataPoints: [
+                    { x: 2005, y: -.0066},
+                    { x: 2006, y: -.0052},
+                    { x: 2007, y: -.0022 },
+                    { x: 2008, y: .0121 },
+                    { x: 2009, y: .0345 },
+                    { x: 2010, y: .007},
+                    { x: 2011, y: -.0071 },
+                    { x: 2012, y: -.0098},
+                    { x: 2013, y: -.0093 },
+                    { x: 2014, y: -.0086},
+                ]
+                }
+            ],
+            legend: {
+                cursor: "pointer",
+                itemclick: function (e) {
+                    if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                        e.dataSeries.visible = false;
+                    } else {
+                        e.dataSeries.visible = true;
+                }
+               
+                }
+            }
+        });
+
+
+    
+
+
+
+
+
+
+
+
+
+        var chart4 = new CanvasJS.Chart("chartContainer4",
+        {
+            animationEnabled: true,
+            theme: "theme2",
+            title:{
+            },
+
+
+            axisY:[{
+              lineColor: "#4F81BC",
+              tickColor: "#4F81BC",
+              labelFontColor: "#4F81BC",
+              titleFontColor: "#4F81BC",
+              lineThickness: 2,
+              maximum: .1,
+
+            },
+            {
+              lineColor: "#C0504E",
+              tickColor: "#C0504E",
+              labelFontColor: "#C0504E",
+              titleFontColor: "#C0504E",
+              lineThickness: 2,
+              maximum: .1,
+              minimum: -.1,
+              
+            }],
+            data: [
+            {
+                type: "spline", //change type to bar, line, area, pie, etc
+                showInLegend: true,        
+                dataPoints: [
+                    { x: 2005, y: .0491},
+                    { x: 2006, y: .0567},
+                    { x: 2007, y: -.0167 },
+                    { x: 2008, y: -.07833 },
+                    { x: 2009, y: .0083},
+                    { x: 2010, y: -.01333 },
+                    { x: 2011, y: .03417},
+                    { x: 2012, y: -.055},
+                    { x: 2013, y: .07333 },
+                    { x: 2014, y: -.0375}
+                ]
+                },
+                {
+                type: "spline",
+                            axisYIndex: 1,
+                showInLegend: true,            
+                dataPoints: [
+                    { x: 2005, y: -.0016},
+                    { x: 2006, y: -.00523},
+                    { x: 2007, y: .00083 },
+                    { x: 2008, y: .00642},
+                    { x: 2009, y: .02867 },
+                    { x: 2010, y: -.00025},
+                    { x: 2011, y: -.00833 },
+                    { x: 2012, y: -.0085},
+                    { x: 2013, y: -.0029 },
+                    { x: 2014, y: -.0095},
+                ]
+                }
+            ],
+            legend: {
+                cursor: "pointer",
+                itemclick: function (e) {
+                    if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                        e.dataSeries.visible = false;
+                    } else {
+                        e.dataSeries.visible = true;
+                }
+                chart4.render();
+                }
+            }
+        });
+
+    </script>
+  
+   </div> 
+
+
+
+
+    <title>Technickettes</title>
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Abril Fatface">
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Old Standard">
+<style>
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    background-color: black;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+    
+}
+.nav a{
+    display:inline-block;
+    padding:15px;
+    color: white;
+    text-decoration: none;
+    font-family: Old Standard;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+li a:hover {
+    background-color: #111111;
+    text-align: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}    
+h1 {
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Abril Fatface;
+    font-size: 50px;
+} 
+body { 
+    text-align:center;
+    color:white;
+    padding:50px;
+    font-family:Old Standard;
+    font-size:300%;
+}
+footer {
+    padding-top:50px;
+    font-size: -1px;
+
+}
+</style>
+</head>
+
+<body>
+<div class="scaleable-wrapper" id="scaleable-wrapper">
+  
+  <div class="very-specific-design" id="very-specific-design">
+    
+    <h1> Technickettes is a dumb name</h1>
+    <ul class="nav">
+      <li><a data-scroll href="#National">National</a>
+      </li>
+      <li><a data-scroll href="#EC">East Coast</a>
+      </li>
+      <li><a data-scroll href="#South">South</a>
+      </li>
+      <li><a data-scroll href="#WC">West Coast</a>
+      </li>
+      <li><a data-scroll href="#MW">Midwest</a>
+      </li>
+    </ul>
+
+    <div> 
+    <p style="background-color:black;" id="National">National Data</p>
+    <img src="news.png">
+    </div>
+
+    <div> 
+    <p style="background-color:black;" id="EC">Northeast Data</p>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
+
+    <div> 
+    <p style="background-color:black;" id="South">Southern Data</p>
+    <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+    </div>
+
+    <div> 
+    <p style="background-color:black;" id="WC">West Coast Data</p>
+    <img src="picture1.png">
+    <img src="picture2.png">
+    </div>
+
+    <div> 
+    <p style="background-color:black;" id="MW">Midwest Data</p>
+    <img src="Midwest.png"> 
+    <img src="picture2.png">
+    </div>
+
+    <footer> 
+     <div class="nav">
+      <ul>
+        <li>
+         <a href="https://twitter.com/7annahPS">Hannah</a>
+        </li> 
+        <li>
+         <a href="https://twitter.com/chumlyfe">Cici</a>
+        </li> 
+        <li>
+         <a href="https://twitter.com/EmilyReimal">Emily</a>
+        </li> 
+        <li>
+         <a href="#">Jenn</a>
+        </li> 
+       </ul>
+      </div>    
+    </footer>
+    
+ </div>
+  
+</div>
+</body>
+</html>
